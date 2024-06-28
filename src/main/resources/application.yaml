@@ -1,0 +1,18 @@
+server:
+    port: 8080
+    forward-headers-strategy: native
+spring:
+  cloud:
+    azure:
+      active-directory:
+        enabled: true
+        profile:
+          tenant-id: ${azure.tenant.id}
+        credential:
+          client-id: ${azure.client.id}
+          client-secret: ${azure.client.secret}
+
+demo:
+  logout:
+    tenant-id: ${azure.tenant.id}
+    redirect-uri: ${my.redirect.uri}
