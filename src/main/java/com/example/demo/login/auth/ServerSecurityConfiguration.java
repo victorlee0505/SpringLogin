@@ -40,7 +40,7 @@ public class ServerSecurityConfiguration {
 
             })
             .oauth2Login(oauth2 -> oauth2
-                .loginPage("/oauth2/authorization/azure")
+                .loginPage("/oauth2/authorization/azure/whatisthis")
                 .defaultSuccessUrl("/home", true)
             )
             .logout(logout -> logout
